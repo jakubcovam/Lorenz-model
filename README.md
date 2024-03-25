@@ -12,7 +12,7 @@ User can change three parameters of the model - sigma, rho and beta - using slid
 
 **B) main.py**
 
-Python application using Dashboard for Larenz model with slider.
+Python application using Dashboard for Lorenz model with sliders.
 
 The layout looks like this:
 
