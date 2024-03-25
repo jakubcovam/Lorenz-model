@@ -1,6 +1,6 @@
 # Lorenz model
 
-**A) lorenz_R**
+**A) lorenz.R**
 
 Shiny application of Lorenz model (https://en.wikipedia.org/wiki/Lorenz_system) created in RStudio. 
 
