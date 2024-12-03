@@ -12,7 +12,11 @@ def lorenz(t, state, sigma, beta, rho):
 
 
 # Solve the Lorenz system
-def solve_lorenz(sigma=10, beta=8/3, rho=28, init_state=[1, 1, 1], t_span=[0, 50], t_eval=np.linspace(0, 50, 10000)):
+def solve_lorenz(sigma=10, beta=8/3, rho=28, init_state=None, t_span=None, t_eval=np.linspace(0, 50, 10000)):
+    if t_span is None:
+        t_span = [0, 50]
+    if init_state is None:
+        init_state = [1, 1, 1]
     return solve_ivp(lorenz, t_span, initial_state, args=(sigma, beta, rho), t_eval=t_eval)
 
 
